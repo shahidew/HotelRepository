@@ -5,16 +5,74 @@
     <title>RoomReservation</title>
 </head>
 <body>
-<form method="post" action="system">
+<form>
     <input type="radio" id="reserve" name="reserve" value="reserve">
-    <label for="reserve">Reserve</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label>
+    <label for="reserve">Reserve</label><br><br>
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" autofocus><br><br>
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="nationalCode">national code:</label>
+    <input type="number" id="nationalCode" name="nationalCode"
+           pattern="[0-9]{10}"><br><br>
+
+    <label for="start_date">Start date : </label>
+    <input type="text" id="start_date" name="start_date" placeholder="YYYY/MM/DD"
+           pattern="(?:19|20)\[0-9\]{2}/(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
+    ><br><br>
+
+    <label for="end_date">End date : </label>
+    <input type="text" id="end_date" name="end_date" placeholder="YYYY/MM/DD"
+           pattern="(?:19|20)\[0-9\]{2}/(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
+    ><br><br>
+
+    <label for="capacity">Room capacity:</label>
+    <input type="number" id="capacity" name="capacity"
+           pattern="[1-4]{1}"><br><br>
+
+
+
+    <input type="radio" id="cancellation" name="cancellation" value="cancellation">
+    <label for="cancellation">CancellationReserve</label><br>
+
+    <label for="national_code">national code:</label>
+    <input type="number" id="national_code" name="national_code"
+           pattern="[0-9]{10}"><br><br>
+
+
+    <label for="reserve_number">reserve code:</label>
+    <input type="number" id="reserve_number" name="reserve_number"
+           pattern="[0-9]{5}"><br><br>
+
+
+    <input type="radio" id="changePeriod" name="changePeriod" value="changePeriod">
+    <label for="changePeriod">ChangePeriod</label><br><br>
+
+    <label for="nationalNumber">national code:</label>
+    <input type="number" id="nationalNumber" name="nationalNumber"
+           pattern="[0-9]{10}"><br><br>
+
+
+    <label for="reservenmber">reserve code:</label>
+    <input type="number" id="reservenmber" name="reservenmber"
+           pattern="[0-9]{5}"><br><br>
+
+
+    <input type="radio" id="changeCapacity" name="changeCapacity" value="changeCapacity">
+    <label for="changeCapacity">ChangeCapacity</label><br><br>
+
+    <label for="national_number">national code:</label>
+    <input type="number" id="national_number" name="national_number"
+           pattern="[0-9]{10}"><br><br>
+
+
+    <label for="reserve_code">reserve code:</label>
+    <input type="number" id="reserve_code" name="reserve_code"
+           pattern="[0-9]{5}"><br><br>
+
 </form>
-
-
-
 </body>
 </html>
