@@ -10,10 +10,11 @@ import java.io.IOException;
 @WebServlet(name = "HomeServlet")
 public class HomeServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        response.setContentType("text/html");
+        request.getRequestDispatcher("roomReservationSystem.html").include(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        doPost(request,response);
     }
 }
